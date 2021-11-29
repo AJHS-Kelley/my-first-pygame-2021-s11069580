@@ -31,3 +31,10 @@ windoeSurface.fill(White)
 
 
 pygame.draw.polygon(windowSurface, Green, ((146, ), (291, 106), (236, 277), (56, 277), (0, 106)))
+
+
+pygame.draw.line(windowSurface, Blue, (60, 60), (120, 60), 4)
+pygame.draw.line(windowSurface, Blue, (120, 60), (60, 120), 4)
+pygame.draw.line(windowSurface, Blue, (60, 120), (120, 120), 4)
+
+
