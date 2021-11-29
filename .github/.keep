@@ -1,4 +1,4 @@
-Pygame v0.5
+Pygame v0.7
 
 import pygame, sys
 from pygame.locals import *
@@ -15,13 +15,13 @@ Black = (0, 0, 0)
 White = (255, 255, 255)
 Red = (255, 0, 0)
 Green = (0, 255, 0)
-Blue = (0, 0, 255)
+BLUE = (0, 0, 255)
 
 
 basicFont = pygame.font.sysFont(None, 48)
 
 
-text = basicFont.render('Hello, world!', True, White, Blue)
+text = basicFont.render('Hello, world!', True, White, BLUE)
 textRect = text.get_rect()
 textRect.centerx = windowSurface.get_rect().centerx
 textRect.century = windowSurface.get_rect().centery
@@ -33,8 +33,12 @@ windoeSurface.fill(White)
 pygame.draw.polygon(windowSurface, Green, ((146, ), (291, 106), (236, 277), (56, 277), (0, 106)))
 
 
-pygame.draw.line(windowSurface, Blue, (60, 60), (120, 60), 4)
-pygame.draw.line(windowSurface, Blue, (120, 60), (60, 120), 4)
-pygame.draw.line(windowSurface, Blue, (60, 120), (120, 120), 4)
+pygame.draw.line(windowSurface, BLUE, (60, 60), (120, 60), 4)
+pygame.draw.line(windowSurface, BLUE, (120, 60), (60, 120), 4)
+pygame.draw.line(windowSurface, BLUE, (60, 120), (120, 120), 4)
 
 
+pygame.draw.circle(windowSurface, BLUE, (300, 50), 20, 0)
+
+
+pygame.draw.ellipse(windowSurface, RED), (300, 250, 40, 80), 1)
