@@ -1,4 +1,4 @@
-Pygame v0.3
+Pygame v0.5
 
 import pygame, sys
 from pygame.locals import *
@@ -25,3 +25,9 @@ text = basicFont.render('Hello, world!', True, White, Blue)
 textRect = text.get_rect()
 textRect.centerx = windowSurface.get_rect().centerx
 textRect.century = windowSurface.get_rect().centery
+
+
+windoeSurface.fill(White)
+
+
+pygame.draw.polygon(windowSurface, Green, ((146, ), (291, 106), (236, 277), (56, 277), (0, 106)))
